@@ -1,0 +1,43 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/main.css'%}" type="text/css">
+</head>
+<body>
+    <h3 id="label-username">Username</h3>
+    <div>
+        <input type="text" id="username-input"> <button id="btn-join">Join</button>
+    </div>
+
+    <div class="main-grid-container">
+            <div id="video-container">
+                <div>
+                    <video src="" id="local-video" style="float:left" autoplay playsinline></video>
+                    <button id="btn-toggle-audio">Audio Mute</button>
+                    <button id="btn-toggle-video">Video Off</button>
+                </div>
+            </div>
+
+            <div id="chat">
+                <h3>Chat</h3>
+                <div id="messages">
+                    <ul id="message-list">
+                    </ul>
+                </div>
+
+                <div>
+                    <input type="text" id="msg"> <button id="btn-sen-msg">Send Message</button>
+                    <button id="btn-share-screen">Share scrren</button>
+                </div>
+            </div>
+    </div>
+</body>
+
+<script src="{%static 'js/main.js'%}"></script>
+</html>
